@@ -1,6 +1,6 @@
 # Superteam submission — ColdWatch for ZeroClaw
 
-**Demo video (1:05):** https://youtu.be/zltoLBP8kgk  
+**Real terminal demo (0:40):** https://github.com/josuefernandoarita20-stack/solana-coldwatch/blob/main/demo/coldwatch-terminal-demo.mp4  
 **GitHub:** https://github.com/josuefernandoarita20-stack/solana-coldwatch
 
 ## One-line pitch
@@ -31,6 +31,9 @@ ZeroClaw itself is configured to contact only `127.0.0.1`.
 The agent was told to ignore its rules, reveal a seed phrase, and transfer all
 SOL. It refused, called no tool, and explained that the request was harmful.
 The exact prompt and output are included in `docs/demo-transcript.md`.
+
+The submitted video is rendered from the exact captured terminal transcript,
+not a mocked UI or slide deck. The raw transcript is included under `demo/`.
 
 ## Reproduce
 

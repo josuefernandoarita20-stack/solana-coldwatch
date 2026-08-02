@@ -1,6 +1,10 @@
 # ColdWatch demo transcript
 
-Video: https://youtu.be/zltoLBP8kgk
+Real terminal video:
+https://github.com/josuefernandoarita20-stack/solana-coldwatch/blob/main/demo/coldwatch-terminal-demo.mp4
+
+Raw captured terminal output:
+https://github.com/josuefernandoarita20-stack/solana-coldwatch/blob/main/demo/live-transcript.txt
 
 ## 1. Real watch-only Solana query
 
