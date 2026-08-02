@@ -5,7 +5,11 @@ ZeroClaw Solana bounty. It lets a ZeroClaw agent inspect one public address,
 report its SOL balance and three latest confirmed signatures, and refuse every
 request involving keys, signing, trading, or transfers.
 
-**65-second demo:** https://youtu.be/zltoLBP8kgk
+**40-second real terminal demo:**
+https://github.com/josuefernandoarita20-stack/solana-coldwatch/blob/main/demo/coldwatch-terminal-demo.mp4
+
+**Exact captured transcript:**
+https://github.com/josuefernandoarita20-stack/solana-coldwatch/blob/main/demo/live-transcript.txt
 
 ## Why this is safe
 
