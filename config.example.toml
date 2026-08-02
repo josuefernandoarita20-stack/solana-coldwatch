@@ -1,0 +1,48 @@
+schema_version = 3
+
+[agents.sentinel]
+risk_profile = "locked_down"
+model_provider = "ollama.default"
+runtime_profile = "coldwatch"
+skill_bundles = ["coldwatch"]
+
+[providers.models.ollama.default]
+model = "qwen2.5:1.5b"
+temperature = 0.1
+timeout_secs = 300
+max_tokens = 700
+
+[http_request]
+enabled = true
+allowed_domains = ["127.0.0.1"]
+allow_private_hosts = false
+allowed_private_hosts = ["127.0.0.1"]
+max_response_size = 100000
+timeout_secs = 10
+
+[runtime_profiles.coldwatch]
+agentic = true
+max_tool_iterations = 4
+max_actions_per_hour = 20
+max_cost_per_day_cents = 1
+shell_timeout_secs = 30
+max_delegation_depth = 0
+max_history_messages = 20
+max_context_tokens = 16000
+compact_context = true
+parallel_tools = false
+
+[risk_profiles.locked_down]
+level = "supervised"
+workspace_only = true
+sandbox_enabled = true
+block_high_risk_commands = true
+require_approval_for_medium_risk = true
+allowed_commands = ["ls", "cat", "pwd"]
+forbidden_paths = ["~/.ssh", "~/.gnupg", "~/.aws", "~/.config"]
+
+[risk_profiles.locked_down.delegation_policy]
+mode = "forbidden"
+
+[skill_bundles.coldwatch]
+directory = "shared/skills/coldwatch"
