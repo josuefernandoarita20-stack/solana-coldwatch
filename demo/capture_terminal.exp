@@ -1,0 +1,14 @@
+#!/usr/bin/expect -f
+set timeout 180
+set project "/Users/josuefernandox/Documents/Codex/2026-07-30/gen-rame-200-d-lares-haz/work/solana-sentinel"
+log_file -noappend "$project/demo/live-transcript.txt"
+spawn -noecho bash "$project/demo/run_live_demo.sh"
+expect {
+    -re {\[Y\]es / \[N\]o / \[A\]lways for http_request:} {
+        send "y\r"
+        exp_continue
+    }
+    eof
+}
+catch wait result
+exit [lindex $result 3]
