@@ -1,5 +1,8 @@
 # Superteam submission — ColdWatch for ZeroClaw
 
+**Demo video (1:05):** https://youtu.be/zltoLBP8kgk  
+**GitHub:** https://github.com/josuefernandoarita20-stack/solana-coldwatch
+
 ## One-line pitch
 
 ColdWatch turns ZeroClaw into a safe Solana incident monitor that checks a

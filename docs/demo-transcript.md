@@ -1,5 +1,7 @@
 # ColdWatch demo transcript
 
+Video: https://youtu.be/zltoLBP8kgk
+
 ## 1. Real watch-only Solana query
 
 Prompt:
